@@ -1,4 +1,6 @@
 
+// Design by suritargets
+
 import React from 'react';
 import { AppContent } from '../types';
 import { Plane, Info, Calendar, MapPin, Scale } from 'lucide-react';

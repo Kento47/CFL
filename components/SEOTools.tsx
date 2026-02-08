@@ -1,4 +1,6 @@
 
+// Design by suritargets
+
 import React, { useEffect } from 'react';
 import { SEOSettings } from '../types';
 
@@ -12,7 +14,7 @@ const SEOTools: React.FC<Props> = ({ settings, pagePath }) => {
 
   useEffect(() => {
     // Update Document Title
-    document.title = settings.title || 'Caribbean Freight Logistics';
+    document.title = settings.title || 'Caribbean Freight Logisticss';
 
     // Update Meta Tags
     const updateMeta = (name: string, content: string, property: boolean = false) => {

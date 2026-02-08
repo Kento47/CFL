@@ -1,4 +1,6 @@
 
+// Design by suritargets
+
 import React, { useState } from 'react';
 import { AppContent } from '../types';
 import { Phone, Mail, Clock, MapPin, Send, MessageCircle } from 'lucide-react';

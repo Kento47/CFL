@@ -1,4 +1,6 @@
 
+// Design by suritargets
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AppContent } from '../types';
@@ -54,7 +56,7 @@ const Services: React.FC<Props> = ({ content }) => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4 uppercase tracking-tight">Onze Diensten</h1>
           <p className="text-lg text-gray-600 font-medium max-w-2xl mx-auto">
-            Caribbean Freight Logistic biedt een compleet pakket aan logistieke oplossingen voor zowel particulieren als zakelijke klanten.
+            Caribbean Freight Logistics biedt een compleet pakket aan logistieke oplossingen voor zowel particulieren als zakelijke klanten.
           </p>
           <div className="w-20 h-2 bg-cfl-orange mx-auto mt-6 rounded-full"></div>
         </div>

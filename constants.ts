@@ -2,11 +2,11 @@
 import { AppContent } from './types';
 
 export const DEFAULT_CONTENT: AppContent = {
-  heroTitle: "Welkom bij Caribbean Freight Logistic",
+  heroTitle: "Welkom bij Caribbean Freight Logistics",
   heroText: "Wij zijn de specialist in luchtvracht en zeevracht. Wij hebben 20 jaren ervaring op deze markt. Onze ervaring is uw voordeel!!",
-  importExportText: "Caribbean Freight Logistic B.V. is de partner voor al uw logistieke diensten van Nederland naar diverse landen met als specialisatie Suriname en de Caribbean.",
+  importExportText: "Caribbean Freight Logistics B.V. is de partner voor al uw logistieke diensten van Nederland naar diverse landen met als specialisatie Suriname en de Caribbean.",
   
-  airFreightIntro: "Caribbean Freight Logistic heeft door haar jarenlange ervaring de beste en snelste mogelijkheden om uw luchtvracht wereldwijd op plaats van bestemming te krijgen.",
+  airFreightIntro: "Caribbean Freight Logistics heeft door haar jarenlange ervaring de beste en snelste mogelijkheden om uw luchtvracht wereldwijd op plaats van bestemming te krijgen.",
   airFreightCountries: [
     {
       id: '1',
@@ -30,7 +30,7 @@ export const DEFAULT_CONTENT: AppContent = {
     }
   ],
 
-  seaFreightIntro: "Caribbean Freight Logistic is actief in zeevracht en beschikt over de connecties om vracht naar de juiste bestemming te verschepen.",
+  seaFreightIntro: "Caribbean Freight Logistics is actief in zeevracht en beschikt over de connecties om vracht naar de juiste bestemming te verschepen.",
   seaFreightCountries: [
     {
       id: '1',
@@ -113,7 +113,7 @@ export const DEFAULT_CONTENT: AppContent = {
   ],
   seo: {
     home: {
-      title: "Caribbean Freight Logistics | Expert in Suriname & Caribbean",
+      title: "Caribbean Freight Logisticss | Expert in Suriname & Caribbean",
       description: "20 jaar ervaring in luchtvracht en zeevracht naar Suriname en de Caribbean. Uw logistieke partner vanuit Nederland.",
       keywords: "vrachtvervoer, suriname, caribbean, luchtvracht, zeevracht, logistiek",
       shareImage: ""
@@ -131,7 +131,7 @@ export const DEFAULT_CONTENT: AppContent = {
       shareImage: ""
     },
     diensten: {
-      title: "Logistieke Diensten | Caribbean Freight Logistics",
+      title: "Logistieke Diensten | Caribbean Freight Logisticss",
       description: "Bekijk ons complete aanbod van logistieke oplossingen voor particulieren en bedrijven.",
       keywords: "diensten, logistiek, transport, warehousing",
       shareImage: ""
@@ -143,7 +143,7 @@ export const DEFAULT_CONTENT: AppContent = {
       shareImage: ""
     },
     contact: {
-      title: "Contact Caribbean Freight Logistics | Gouda & Ridderkerk",
+      title: "Contact Caribbean Freight Logisticss | Gouda & Ridderkerk",
       description: "Neem contact op met ons team in Gouda of Ridderkerk voor al uw vragen over vrachtvervoer.",
       keywords: "contact, klantenservice, adres ridderkerk, telefoon gouda",
       shareImage: ""

@@ -19,10 +19,22 @@ const App: React.FC = () => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    const savedContent = localStorage.getItem('cfl_content');
-    if (savedContent) {
-      const parsed = JSON.parse(savedContent);
-      setContent({ ...DEFAULT_CONTENT, ...parsed });
+    try {
+      const savedContent = localStorage.getItem('cfl_content');
+      if (savedContent) {
+        const parsed = JSON.parse(savedContent);
+        // We mergen diep om er zeker van te zijn dat nieuwe velden in DEFAULT_CONTENT 
+        // niet ontbreken als een oude versie is opgeslagen
+        setContent({ 
+          ...DEFAULT_CONTENT, 
+          ...parsed,
+          branding: { ...DEFAULT_CONTENT.branding, ...parsed.branding },
+          contact: { ...DEFAULT_CONTENT.contact, ...parsed.contact },
+          seo: { ...DEFAULT_CONTENT.seo, ...parsed.seo }
+        });
+      }
+    } catch (e) {
+      console.error("Fout bij laden van opgeslagen content", e);
     }
   }, []);
 
@@ -34,8 +46,13 @@ const App: React.FC = () => {
   }, [content.theme]);
 
   const updateContent = (newContent: AppContent) => {
-    setContent(newContent);
-    localStorage.setItem('cfl_content', JSON.stringify(newContent));
+    try {
+      setContent(newContent);
+      localStorage.setItem('cfl_content', JSON.stringify(newContent));
+    } catch (e) {
+      console.error("Opslaglimiet bereikt. Gebruik de Export-functie in het beheerpaneel.");
+      throw e; // Zodat Admin component dit kan afvangen
+    }
   };
 
   return (

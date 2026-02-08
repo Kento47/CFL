@@ -1,4 +1,6 @@
 
+// Design by suritargets
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ArrowUp, MapPin, Phone, Mail, Instagram, Facebook, Linkedin, Youtube, MessageCircle, Share2, Twitter, Link as LinkIcon, CheckCircle2 } from 'lucide-react';
@@ -132,6 +134,9 @@ const Footer: React.FC<Props> = ({ content }) => {
         <div className="border-t border-blue-800/50 pt-8 text-center">
           <p className="text-[10px] text-blue-400 font-bold uppercase tracking-[0.3em]">
             &copy; {new Date().getFullYear()} {content.branding.footerCopyrightText || (content.branding.companyName + ' • MADE WITH PRIDE')}
+          </p>
+          <p className="text-[9px] text-blue-500/60 font-bold uppercase tracking-[0.25em] mt-3">
+            Design by suritargets
           </p>
         </div>
       </div>
